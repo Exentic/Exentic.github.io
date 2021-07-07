@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+        <p> [과일 목록] </p>
+        <table border="1">
+            <tr>
+                <th> 이름 </th>
+                <th> 가격 </th>
+                <th> 갯수 </th>
+            </tr>
+            <tr>
+                <td id="data00"></td>
+                <td id="data01"></td>
+                <td id="data02"></td>
+            </tr>
+            <tr>
+                 <td id="data10"></td>
+                 <td id="data11"></td>
+                 <td id="data12"></td>
+            </tr>
+            <tr>
+                <td id="data20"></td>
+                <td id="data21"></td>
+                <td id="data22"></td>
+            </tr>            
+        </table>
+        <script> 
+            
+            var fruits = [ { name : '사과', value : 21000, qty : 10}, {name : '참외', value: 18000, qty : 20}, {name : '귤', value: 15000, qty : 30}]
+            
+
+            for(var i = 0; i<3; i++)
+            {
+                var cname = document.getElementById("data" + i + + '0');
+                cname.textContent =  fruits[i].name;
+
+                var cprice=document.getElementById("data" + i + '1');
+                cprice.textContent = fruits[i].value;
+
+                var cqty=document.getElementById("data" + i + '2');
+                cqty.textContent = fruits[i].qty;
+            }
+                
+        </script>
+
+    </body>
+</html>
