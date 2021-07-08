@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> 12주차 01 과제 </title>
+    </head>
+    <body>
+        <center>
+            <input type="button" value="10까지 계산" id = "count10" name="count10" onclick="getResult(10)";>
+            <input type="button" value="50까지 계산" id = "count50" name="count50" onclick="getResult(50)";>
+            <input type="button" value="100까지 계산" id = "count100" name="count100" onclick="getResult(100)";>
+        </center>
+        <script>
+            function getResult(a)
+            {
+                var sum = 0;
+
+                for(var i = 1; i<=a; i++)
+                {
+                    sum += i;
+                }
+                var inputString = a + " 까지 더한 값은 " + sum + " 입니다";
+                alert(inputString);
+            }
+        </script>
+        
+
+    </body>
+</html>

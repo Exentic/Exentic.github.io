@@ -1,0 +1,31 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> 12주차 03 과제 </title>
+
+    </head>
+    <body>
+        <script>
+            var inputString = prompt("영문자를 입력하세요");
+
+            if(inputString == null)
+            {
+                document.write("입력을 취소하셨습니다.");
+            }
+            else
+            {
+                if(inputString >= "a" && inputString <= "z")
+                    document.write("입력한 글자는 소문자 " + inputString + " 입니다.");
+
+                else if(inputString >= "A" && inputString <= "Z")
+                    document.write("입력한 글자는 대문자 " + inputString + " 입니다.");
+
+                else
+                {
+                    document.write("영문자가 아닙니다.");
+                }
+            }
+        </script>
+    </body>
+</html>
