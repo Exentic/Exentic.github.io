@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> 13주차 과제 02번 </title>
+        <script src= "https://code.jquery.com/jquery-1.12.4.min.js""> </script>
+
+        <script>
+            $(document).ready(function()
+            {
+                $("img").hide();
+                $("button.Football").click(function()
+                    {
+                        $("img.s01").show();
+                    });
+
+                    $("button.baseball").click(function()
+                    {
+                        $("img.s02").show();
+                    });
+
+                    $("button.basketball").click(function()
+                    {
+                        $("img.s03").show();
+                    });
+
+                   
+            });
+
+        </script>
+    </head>
+    <body>
+        <center>
+            <div> 
+                <h1> 당신이 좋아하는 스포츠는? </h1> </br>
+                <button class="Football"> 프로축구 </button>
+                <button class="baseball"> 프로야구 </button>
+                <button class="basketball"> 프로농구 </button>
+            </div>
+            <div>
+                <img src="http://m.fundome.co.kr/web/product/big/201709/5998_shop1_482001.jpg" class="s01"> 
+                <img src="http://image.auction.co.kr/itemimage/20/93/d3/2093d3b3c6.jpg" class="s02"> 
+                <img src="https://media.decathlon.co.kr/media/catalog/product/cache/1/image/500x500/9df78eab33525d08d6e5fb8d27136e95/0/0/00_p1550100_8495729.jpg" class="s03"> 
+            </div>
+        </center>
+        
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> 13주차 과제 01 </title>
+        <script src="http://code.jQuery.com/jQuery-3.2.1.min.js">  </script>
+
+        <script>
+            var sum = 0;
+            $(document).ready(function() {
+
+                $("div.click").mousedown(function()
+                {
+                    $("p:first", this).text("mouse down");
+                    $("p:last", this).text("총 클릭 횟수 " + ++sum);
+                });
+
+                $("div.click").mouseleave(function()
+                    {
+                        $("p:first", this).text("마우스 클릭 횟수");
+                        $("P:last", this).text(sum);
+                    });
+                
+            });
+
+
+        </script> 
+        <style>
+            
+            #s01 {
+                background-color: pink;
+                width: 200px;
+                height: 150px;
+            }
+
+            #s02 {
+                background-color: powderblue;
+                width: 200px;
+                height: 150px;
+            }
+
+            #s03 {
+                background-color:lawngreen;
+                width: 200px;
+                height: 150px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class = "click" id="s01"> <p> 마우스 클릭 횟수 </p> <p> 0 </p> </div>
+        <div class = "click" id="s02"> <p> 마우스 클릭 횟수 </p> <p> 0 </p> </div>
+        <div class = "click" id="s03"> <p> 마우스 클릭 횟수 </p> <p> 0 </p> </div>
+       
+        <script>
+
+
+        </script>
+
+
+    </body>
+</html>
